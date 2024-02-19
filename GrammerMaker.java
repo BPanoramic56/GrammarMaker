@@ -23,7 +23,7 @@ public class GrammerMaker {
 		makeGrammar(lines, nonTerminals, productionsRules);
 		createStartClause(lines, nonTerminals, productionsRules);
 
-		FileWriter file = new FileWriter("FILEWRITERTEST22.txt");
+		FileWriter file = new FileWriter("GrammarMakerOutput.txt"); // this creates the file the grammar will be stored or overwrites an existing file
 		file.write(String.join("", lines));
 		file.flush();
 		file.close();
